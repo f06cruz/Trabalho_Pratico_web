@@ -24,60 +24,26 @@ main{
     
 }
 
-.dropdown-menu {
-    background-color: var(--fundo);
-    color:  var(--cartaoAzul);
-    border: 1px solid var(--cartaoAzul);
-    box-shadow:none;
-}
-
-.dropdown-item:hover{
-  background-color: var(--cvClaro);
-  color: var(--cartaoVermelho);
-}
-
-
-.btn,
-.btn:active,
-.btn:focus,
-.btn:focus:active{
-    background-color: var(--fundo);
-    color:  var(--cartaoAzul);
-    border: 1px solid var(--cartaoAzul);
-}
-
-
-.page-link,
-.page-link:active,
-.page-link:focus{
-     background-color: var(--fundo);
-    color:  var(--cartaoAzul);
-    border: 1px solid var(--cartaoAzul);
-    box-shadow:none;
-}
-
-.page-link:hover{
-background-color: var(--cartaoVermelho);
-    color:  var(--fundo);
-    border: 1px solid var(--cartaoVermelho);
-}
-
-
-.btn:hover{
-    background-color: var(--cartaoVermelho);
-    color:  var(--fundo);
-    border: 1px solid var(--cartaoVermelho);
-}
-
 footer {
     background-color: var(--fundo);
-    color: var(--cartaoAzul)
 }
 
-a .bi {
-    color: var(--cartaoAzul);
+a{
+    color:  var(--cartaoAzul);
+    text-decoration: none;
 }
 
-a .bi:hover{
+a:hover,
+.bi:hover{
     color: var(--cartaoVermelho);
+}
+
+nav a.active {
+    color: var(--cartaoVermelho);
+    font-weight: bold;
+    border-bottom: 2px solid var(--cartaoVermelho);
+}
+
+.bi {
+    font-size: 1.8rem;
 }
