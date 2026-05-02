@@ -34,16 +34,132 @@ a{
 }
 
 a:hover,
-.bi:hover{
+footer .bi:hover{
     color: var(--cartaoVermelho);
 }
 
-nav a.active {
+.bi {
+    margin-right: 7px;
+    color: var(--cartaoAzul);
+    font-size: 1.8rem;
+}
+
+.active {
+    pointer-events: none;
     color: var(--cartaoVermelho);
     font-weight: bold;
     border-bottom: 2px solid var(--cartaoVermelho);
 }
 
-.bi {
-    font-size: 1.8rem;
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-up {
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.fade-down {
+  opacity: 0;
+  animation: fadeDown 0.8s ease forwards;
+}
+
+.slide-left {
+  opacity: 0;
+  animation: slideInLeft 0.8s ease forwards;
+}
+
+.slide-right {
+  opacity: 0;
+  animation: slideInRight 0.8s ease forwards;
+}
+
+.btn-danger {
+    background-color: var(--cartaoVermelho) !important;
+    border: none !important;
+    color: var(--fundo) !important;
+}
+
+.btn-danger:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+.btn-danger:active {
+    opacity: 0.80;
+    transform: translateY(1px);
+}
+
+.btn-primary {
+    background-color: var(--cartaoAzul) !important;
+    border: none !important;
+    color: var(--fundo) !important;
+}
+
+.btn-primary:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+.btn-primary:active {
+    opacity: 0.80;
+    transform: translateY(1px);
+}
+
+.modal-content{
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--fundo);
+    color:  var(--cartaoVermelho);
+}
+
+.form-label {
+    color: var(--cartaoAzul);
+}
+
+.form-control {
+    border: 1px solid var(--acinzentado);
+}
+
+.form-control:focus {
+    border-color: var(--fundo);
+    box-shadow: 0 0 0 0.1rem var(--cartaoVermelho);
 }
