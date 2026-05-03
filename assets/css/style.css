@@ -163,3 +163,54 @@ footer .bi:hover{
     border-color: var(--fundo);
     box-shadow: 0 0 0 0.1rem var(--cartaoVermelho);
 }
+
+main section{
+  background-color: var(--cvClaro);
+  border: 1px solid var(--acinzentado);
+  border-color: var(--acinzentado);
+  box-shadow: 0 0 0 0.1rem var(--acinzentado);
+}
+
+#contImg{
+  background-color: var(--fundo);
+  border: none;
+  box-shadow:none;
+}
+
+main section .titulo {
+  color:  var(--cartaoVermelho);
+  text-align: center;
+}
+
+main section .texto{
+  color:  var(--cartaoAzul);
+  text-align: justify;
+}
+
+main .accordion-item {
+  background-color: var(--fundo);
+  border: 1px solid var(--acinzentado);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+main .accordion-button {
+  background-color: var(--fundo);
+  color: var(--cartaoVermelho);
+  box-shadow: none;
+}
+
+main .accordion-button:not(.collapsed) {
+  background-color: var(--fundoo);
+  color: var(--cartaoVermelho);
+}
+
+main .accordion-button:focus {
+  box-shadow: 0 0 0 0.15rem var(--cartaoVermelho);
+}
+
+main .accordion-body {
+  background-color: var(--cvClaro);
+  color: var(--cartaoAzul);
+}
+
