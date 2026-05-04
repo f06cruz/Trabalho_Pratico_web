@@ -27,27 +27,37 @@
 <body class="d-flex flex-column min-vh-100">
 
   <header class="sticky-top">
-    <div class="container-fluid px-3 px-md-5">
-      <div class="row align-items-center">
-        <div class="col-12 col-md-6 d-flex justify-content-md-start justify-content-center">
-          <img src="../assets/img/logo.png" alt="Erro" width="85" height="70">
-        </div>
-        <div class="col-12 col-md-6 mt-1 mt-md-4 d-flex justify-content-center justify-content-md-end align-items-center">
-          <nav class="d-flex flex-column flex-md-row gap-3 align-items-center">
-            <a href="../pages/index.html">Início</a>
-            <a class="active" href="../pages/portfolio.html">Portfolio</a>
-            <a href="../pages/lusilocs.html">LusiLocs</a>
-            <a href="../pages/sobre.html">Sobre mim</a>
-            <a href="../pages/contacto.html">Contacto</a>
-          </nav>
-        </div>
-      </div>
-    </div>
-    <hr class="my-1">
-  </header>
+        <nav class="navbar navbar-expand-md px-3 px-md-5">
+            <a class="navbar-brand" href="../pages/index.html">
+                <img src="../assets/img/logo.png" alt="Logo" width="85" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end pt-md-4" id="mainNavbar">
+                <ul class="navbar-nav gap-md-3 text-center text-md-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="../pages/portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/lusilocs.html">LusiLocs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/sobre.html">Sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
   <main class="container my-4">
-    <ul class="nav nav-tabs justify-content-center" id="gameTabs" role="tablist">
+    <ul class="nav nav-tabs justify-content-center animate-on-load fade-up mb-2" style="animation-delay: 0.1s;" id="gameTabs" role="tablist">
       <li class="nav-item" role="presentation">
         <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#intro" type="button">Introdução</button>
       </li>
@@ -70,9 +80,9 @@
         <button class="nav-link" data-bs-toggle="tab" data-bs-target="#jdm" type="button">JDM</button>
       </li>
     </ul>
-    <div class="tab-content pt-4">
+    <div class="tab-content pt-3 animate-on-load fade-down mb-2" style="animation-delay: 0.3s;">
       <div class="tab-pane fade show active" id="intro">
-        <div class="row g-3 align-items-center p-3 mt-5">
+        <div class="row g-3 align-items-center my-md-5 px-md-3">
           <div class="d-flex flex-column justify-content-center align-items-center p-3 tab-text">
             <p>Embora a maior parte do meu trabalho na área da localização de jogos esteja sob NDA, tive direito a vários créditos.<br>Para trabalho uso principalmente MemoQ e Microsoft Excel, mas também já usei outras ferramentas CAT, como Phrase, Crowdin e Trados, para além de software proprietário.<br>Já trabalhei em vários géneros, como 4x, racing, simulação de voo, sandbox, side-scrollers e RPGs.<br>Tenho cerca de 10 horas em LQA.<br>Entre diálogos, elementos UI/ UX, material de marketing e documentação legal, já traduzi e pos-editei cerca de 1 204 000 Palavras.</p>
           </div>
@@ -148,8 +158,7 @@
   </main>
 
     
-  <footer class="container-fluid text-center mt-auto pb-0">
-    <hr class="my-2">
+  <footer class="container-fluid text-center mt-auto py-3">
     <div class="row align-items-center">
       <div class="col-12 col-md-6 d-flex justify-content-center align-items-center gap-2">
           <a href="https://www.linkedin.com/company/lusilocs/" target="_blank" class=" d-flex align-items-center gap-2" rel="noopener noreferrer">

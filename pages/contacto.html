@@ -26,41 +26,51 @@
     <title>Inês Cruz - Tradutora Freelance</title>
 <body class="d-flex flex-column min-vh-100">
 
-<header class="sticky-top">
-        <div class="container-fluid px-3 px-md-5">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-6 d-flex justify-content-md-start justify-content-center">
-                    <img src="../assets/img/logo.png" alt="Erro" width="85" height="70">
-                </div>
-                <div class="col-12 col-md-6 mt-1 mt-md-4 d-flex justify-content-center justify-content-md-end align-items-center">
-                    <nav class="d-flex flex-column flex-md-row gap-3 align-items-center">
-                        <a href="../pages/index.html">Início</a>
-                    <a href="../pages/portfolio.html">Portfolio</a>
-                    <a href="../pages/lusilocs.html">LusiLocs</a>
-                    <a href="../pages/sobre.html">Sobre mim</a>
-                    <a class="active" href="../pages/contacto.html">Contacto</a>
-                </nav>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-md px-3 px-md-5">
+            <a class="navbar-brand" href="../pages/index.html">
+                <img src="../assets/img/logo.png" alt="Logo" width="85" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end pt-md-4" id="mainNavbar">
+                <ul class="navbar-nav gap-md-3 text-center text-md-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="../pages/portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/lusilocs.html">LusiLocs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/sobre.html">Sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
-            </div>
-        </div>
-        <hr class="my-1">
+        </nav>
     </header>
 
     <main class="container-fluid d-flex justify-content-center align-items-center text-center p-3 mb-0 rounded flex-grow-1">
         <div class="row w-100 align-items-stretch">
             <div class="col-12 col-md-4 h-100 d-flex flex-column justify-content-center align-items-center">
-                <h3 class="mb-4 animate-on-load slide-left" style="animation-delay: 0.1s;">Contactos</h3>
-                <ul class="list-unstyled mb-4 d-flex flex-column gap-2 text-start animate-on-load slide-left" style="animation-delay: 0.3s;">
+                <h3 class="mb-4 animate-on-load fade-up" style="animation-delay: 0.1s;">Contactos</h3>
+                <ul class="list-unstyled mb-4 d-flex flex-column gap-2 text-start animate-on-load fade-up" style="animation-delay: 0.1s;">
                     <li><i class="bi bi-envelope-at"></i><a href="mailto:fcruz.teste.web@gmail.com" target="_blank" rel="noopener noreferrer">inesnc.trad@gmail.com</a></li>
                     <li><i class="bi bi-geo-alt"></i>Porto, Portugal</li>
                     <li><i class="bi bi-clock"></i>GMT +0 / WEST +1</li>
                     <li><i class="bi bi-globe"></i><a href="https://linktr.ee/inesnc.trad" target="_blank" rel="noopener noreferrer">linktr.ee/inesnc.trad</a></li>
                 </ul>
-                <img src="../assets/img/qr.jpg" alt="erro" class="img-fluid animate-on-load slide-left" style="animation-delay: 0.5s;" width="200">
+                <img src="../assets/img/qr.jpg" alt="erro" class="img-fluid animate-on-load fade-down mb-2" style="animation-delay: 0.1s;" width="200">
             </div>
             <div class="col-12 col-md-8 h-100 d-flex flex-column align-items-center align-items-md-center text-md-start">
-                <h3 class="mb-2 animate-on-load fade-down" style="animation-delay: 0.1s;">Formulário de Contacto</h3>
-                <form form id="contactForm" onsubmit="validar(event)" class="w-100 animate-on-load fade-down" style="animation-delay: 0.3s;">
+                <h3 class="mb-2 mt-2 animate-on-load fade-up" style="animation-delay: 0.3s;">Formulário de Contacto</h3>
+                <form form id="contactForm" onsubmit="validar(event)" class="w-100 animate-on-load fade-down pe-md-4" style="animation-delay: 0.3s;">
                     <div class="row g-2">
                         <div class="col-md">
                             <div class="mb-3">
@@ -89,8 +99,7 @@
     </main>
 
     
-  <footer class="container-fluid text-center mt-auto pb-0">
-    <hr class="my-2">
+    <footer class="container-fluid text-center mt-auto py-3">
     <div class="row align-items-center">
       <div class="col-12 col-md-6 d-flex justify-content-center align-items-center gap-2">
           <a href="https://www.linkedin.com/company/lusilocs/" target="_blank" class=" d-flex align-items-center gap-2" rel="noopener noreferrer">

@@ -27,23 +27,33 @@
 <body class="d-flex flex-column min-vh-100">
 
     <header class="sticky-top">
-        <div class="container-fluid px-3 px-md-5">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-6 d-flex justify-content-md-start justify-content-center">
-                    <img src="../assets/img/logo.png" alt="Erro" width="85" height="70">
-                </div>
-                <div class="col-12 col-md-6 mt-1 mt-md-4 d-flex justify-content-center justify-content-md-end align-items-center">
-                    <nav class="d-flex flex-column flex-md-row gap-3 align-items-center">
-                        <a class="active" href="../pages/index.html">Início</a>
-                        <a href="../pages/portfolio.html">Portfolio</a>
-                        <a href="../pages/lusilocs.html">LusiLocs</a>
-                        <a href="../pages/sobre.html">Sobre mim</a>
-                        <a href="../pages/contacto.html">Contacto</a>
-                    </nav>
-                </div>
+        <nav class="navbar navbar-expand-md px-3 px-md-5">
+            <a class="navbar-brand" href="../pages/index.html">
+                <img src="../assets/img/logo.png" alt="Logo" width="85" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end pt-md-4" id="mainNavbar">
+                <ul class="navbar-nav gap-md-3 text-center text-md-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="../pages/portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/lusilocs.html">LusiLocs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/sobre.html">Sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <hr class="my-1">
+        </nav>
     </header>
 
     <main class="container-fluid d-flex justify-content-center align-items-center text-center p-3 mb-0 rounded flex-grow-1">
@@ -70,8 +80,7 @@
     </main>
 
     
-  <footer class="container-fluid text-center mt-auto pb-0">
-    <hr class="my-2">
+  <footer class="container-fluid text-center mt-auto py-3">
     <div class="row align-items-center">
       <div class="col-12 col-md-6 d-flex justify-content-center align-items-center gap-2">
           <a href="https://www.linkedin.com/company/lusilocs/" target="_blank" class=" d-flex align-items-center gap-2" rel="noopener noreferrer">
